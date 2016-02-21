@@ -29,4 +29,7 @@ This kind of response is called a 'numeric reply'. Pay particular attention to
 that three digit number between the hostname and the users nick, because that's
 the numeric part and it tells you what kind of reply the message represents. In
 the file events.py included in the source distribution there is a long list of
-numeric reply codes and what event string they generate. 
+numeric reply codes and what event string they generate. Trying to decipher
+what the codes mean from just the event strings can be a bit difficult, in rfc1459
+(https://tools.ietf.org/html/rfc1459) section six there's a numeric reply code
+dictionary explaining what they all mean.

@@ -33,3 +33,21 @@ numeric reply codes and what event string they generate. Trying to decipher
 what the codes mean from just the event strings can be a bit difficult, in rfc1459
 (https://tools.ietf.org/html/rfc1459) section six there's a numeric reply code
 dictionary explaining what they all mean.
+
+With that in mind, there's a working sample bot in the file scripts/testbot.py
+included with the source distribution. The rest of this tutorial will just be
+an analysis of this file. The exact code in the sample bot may differ a bit from
+this file, but they should look about the same:
+
+#### Imports ####
+
+    import irc.bot
+    import irc.strings
+    from irc.client import ip_numstr_to_quad, ip_quad_to_numstr
+
+This should be fairly straightforward, however as a note the third import is used
+as part of handling DCC connections, if you don't need DCC then you can ignore it.
+
+#### Instantiation ####
+
+#### Commands ####

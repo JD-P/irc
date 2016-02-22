@@ -81,19 +81,19 @@ for event handlers.
 This one by contrast makes use of the event parameter. The argument given to event
 is a data structure of the form:
 
-type: <MESSAGE_TYPE>,
-source: <USER/HOST THE EVENT ORIGINATES FROM>,
-target: <USER/CHANNEL THE MESSAGE IS GOING TO>,
-arguments: <ACCOMPANYING INFORMATION IN A LIST>,
-tags: <TAGS IN A LIST>
+    type: <MESSAGE_TYPE>,
+    source: <USER/HOST THE EVENT ORIGINATES FROM>,
+    target: <USER/CHANNEL THE MESSAGE IS GOING TO>,
+    arguments: <ACCOMPANYING INFORMATION IN A LIST>,
+    tags: <TAGS IN A LIST>
 
 Here's an example:
 
-type: privmsg,
-source: nick!irssi@192.168.1.1,
-target: test,
-arguments: ['Hi.'],
-tags: []
+    type: privmsg,
+    source: nick!irssi@192.168.1.1,
+    target: test,
+    arguments: ['Hi.'],
+    tags: []
 
 Which represents a privmsg. It should be noted that unlike the rfc, here a
 privmsg means an actual private message sent to an individual user, not a channel,

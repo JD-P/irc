@@ -8,7 +8,7 @@ particular, it's address, port, and a password to connect (if any).
 SingleServerIRCBot: The proper 'bot' class of this library.  It inherits from the
 client implementation in irc.client. Instead of using the server(), add_global_handler(),
 remove_global_handler(), execute_at(), execute_delayed(), execute_every(), process_once(),
-and process_forever() methods of that class, you use the start() method of this
+and process_forever() methods of that class, you can use the start() method of this
 class and handle different events by writing an on_<eventname> method for them.
 
 Channel: A data structure for keeping information about a channel, supports a wide

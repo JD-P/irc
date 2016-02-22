@@ -23,7 +23,7 @@ Before we get started, it's important to understand a few things about how the
 event system works. When you get a message from an IRC server over the wire, it
 generally looks like this:
 
-:<SERVER_HOSTNAME> 252 <NICK> 33 :operator(s) online
+    :<SERVER_HOSTNAME> 252 <NICK> 33 :operator(s) online
 
 This kind of response is called a 'numeric reply'. Pay particular attention to
 that three digit number between the hostname and the users nick, because that's
